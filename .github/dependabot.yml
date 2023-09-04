@@ -5,6 +5,6 @@ updates:
     schedule:
       interval: "weekly"
     allow:
-      - dependency-name: "core-v-verif"
+      - dependency-name: "verif/core-v-verif"
     labels:
       - "Component:Verif"
