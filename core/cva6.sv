@@ -136,6 +136,7 @@ module cva6
     output noc_req_t noc_req_o,
     input noc_resp_t noc_resp_i
 );
+  // Test commit
 
   // ------------------------------------------
   // CVA6 configuration
