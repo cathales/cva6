@@ -29,7 +29,7 @@ module cva6
       logic [config_pkg::NRET-1:0]                  halt;
       logic [config_pkg::NRET-1:0]                  intr;
       logic [config_pkg::NRET*2-1:0]                mode;
-      logic [config_pkg::NRET*2-1:0]                ixl;
+      logic [config_pkg::NRET*2-1:0]              ixl;
       logic [config_pkg::NRET*5-1:0]                rs1_addr;
       logic [config_pkg::NRET*5-1:0]                rs2_addr;
       logic [config_pkg::NRET*riscv::XLEN-1:0]      rs1_rdata;
