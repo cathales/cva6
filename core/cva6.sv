@@ -63,12 +63,12 @@ module cva6
       logic [CVA6Cfg.AxiIdWidth-1:0]   id;
       logic [CVA6Cfg.AxiAddrWidth-1:0] addr;
       axi_pkg::len_t                   len;
-      axi_pkg::size_t                  size;
+      axi_pkg::size_t                       size;
       axi_pkg::burst_t                 burst;
       logic                            lock;
       axi_pkg::cache_t                 cache;
       axi_pkg::prot_t                  prot;
-      axi_pkg::qos_t                   qos;
+      axi_pkg::qos_t              qos;
       axi_pkg::region_t                region;
       axi_pkg::atop_t                  atop;
       logic [CVA6Cfg.AxiUserWidth-1:0] user;
@@ -76,7 +76,7 @@ module cva6
     parameter type axi_w_chan_t = struct packed {
       logic [CVA6Cfg.AxiDataWidth-1:0]     data;
       logic [(CVA6Cfg.AxiDataWidth/8)-1:0] strb;
-      logic                                last;
+      logic                        last;
       logic [CVA6Cfg.AxiUserWidth-1:0]     user;
     },
     parameter type b_chan_t = struct packed {
