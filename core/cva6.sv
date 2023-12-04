@@ -166,7 +166,7 @@ module cva6
 
   localparam config_pkg::cva6_cfg_t CVA6ExtendCfg = {
     CVA6Cfg.NrCommitPorts,
-    CVA6Cfg.AxiAddrWidth,
+       CVA6Cfg.AxiAddrWidth,
     CVA6Cfg.AxiDataWidth,
     CVA6Cfg.AxiIdWidth,
     CVA6Cfg.AxiUserWidth,
