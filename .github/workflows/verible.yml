@@ -16,5 +16,5 @@ jobs:
       - uses: cathales/verible-formatter-action@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          files: '$(ls core/**/*.{v,sv} | grep -v "^core/include/.*_config_pkg.sv$")'
+          files: '$(find core -regex ".*\.\(v\|sv\)$" | grep -v "^core/include/.*_config_pkg.sv$")'
           fail_on_formatting_suggestions: true
