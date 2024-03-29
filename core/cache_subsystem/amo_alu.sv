@@ -19,7 +19,7 @@ module amo_alu #(
     input  logic             [63:0] amo_operand_a_i,
     input  logic             [63:0] amo_operand_b_i,
     output logic             [63:0] amo_result_o      // result of atomic memory operation
-);
+)
 
   logic [64:0] adder_sum;
   logic [64:0] adder_operand_a, adder_operand_b;
